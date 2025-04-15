@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="Template" customModuleProvider="target">
+            <connections>
+                <outlet property="logo" destination="6wm-9t-IGh" id="t9t-ZK-9kZ"/>
+                <outlet property="progress" destination="ezG-ip-DB2" id="pxY-7h-XyL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ezG-ip-DB2">
+                    <rect key="frame" x="175" y="502" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="5F8-UT-O5h"/>
+                        <constraint firstAttribute="height" constant="40" id="oru-Yh-aR2"/>
+                    </constraints>
+                    <color key="color" name="ProgressColor"/>
+                </activityIndicatorView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="6wm-9t-IGh">
+                    <rect key="frame" x="62.666666666666657" y="388" width="265" height="68.333333333333314"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ezG-ip-DB2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="100" id="948-lN-4Hp"/>
+                <constraint firstItem="6wm-9t-IGh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ADf-4e-n5K"/>
+                <constraint firstItem="ezG-ip-DB2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NTO-01-H1G"/>
+                <constraint firstItem="6wm-9t-IGh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="pEP-uZ-w3P"/>
+            </constraints>
+            <point key="canvasLocation" x="-92.307692307692307" y="-443.60189573459712"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="265" height="68.333335876464844"/>
+        <namedColor name="BackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ProgressColor">
+            <color red="0.89999997615814209" green="0.89999997615814209" blue="0.89999997615814209" alpha="0.89999997615814209" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

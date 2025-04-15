@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05A10F51FDF75F273E2FB711 /* MatrixMobileCamera.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC87F9A6FA093221B68283B2 /* MatrixMobileCamera.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		198CE446E43A6C1A7C04C4D8 /* MatrixMobileNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CA2083EDD01021CD3C9EA7 /* MatrixMobileNetwork.xcframework */; };
+		1E77442401E1265CA5693215 /* Matrix_Mobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F25E86E8211998EBB3E1CD /* Matrix_Mobile.xcframework */; };
+		4494FD2820E34D1B1EE5C72C /* ZipArchive.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3D7FB6DAC1C9F4BC5461BE8 /* ZipArchive.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		50C948DC18C4F4C1E37F06F5 /* GCDWebServers.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A46AA5B76EEE1AD53C90F7E5 /* GCDWebServers.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		5CC42030FA4737816397A39C /* GCDWebServers.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46AA5B76EEE1AD53C90F7E5 /* GCDWebServers.xcframework */; };
+		6E5DEE1A61A42846D9B53579 /* MatrixMobileNetwork.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3CA2083EDD01021CD3C9EA7 /* MatrixMobileNetwork.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		777526427204AFA1B4B8FC33 /* MatrixMobileDevice.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786404E638654216D87303B3 /* MatrixMobileDevice.xcframework */; };
+		7EE610E8870989E60EF10384 /* MatrixMobileApp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAA326DFAA6090429B809108 /* MatrixMobileApp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9267102F2D27CF0900300017 /* MatrixMobile.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9267102E2D27CF0900300017 /* MatrixMobile.bundle */; };
+		9A0C3598271FB8C0009756B8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0C3597271FB8C0009756B8 /* MainViewController.swift */; };
+		9A27F304856048C9FD0C4C5C /* Matrix_Mobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27F25E86E8211998EBB3E1CD /* Matrix_Mobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9A415C8B28F686EB00A03CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A415C8928F686EB00A03CD8 /* Assets.xcassets */; };
+		9AAA9C1F29382A5500F47681 /* SamplePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA9C1E29382A5500F47681 /* SamplePlugin.swift */; };
+		9AB4020D27A3B64F00620A3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB4020C27A3B64F00620A3E /* SceneDelegate.swift */; };
+		9ABD696C263C045700CE0393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD6960263C045700CE0393 /* AppDelegate.swift */; };
+		9ABD696F263C045700CE0393 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ABD6966263C045700CE0393 /* LoadingView.xib */; };
+		9ABD6974263C046600CE0393 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABD6970263C046600CE0393 /* Launch Screen.storyboard */; };
+		9ABD6975263C046600CE0393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABD6972263C046600CE0393 /* Main.storyboard */; };
+		9AF1076C273A0A3C0009741C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1076B273A0A3C0009741C /* LoadingView.swift */; };
+		BBEF4D73CCA7F8DC021B2E65 /* MatrixMobileApp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA326DFAA6090429B809108 /* MatrixMobileApp.xcframework */; };
+		BF27F9ACBB526A1E44D24832 /* MatrixMobileDevice.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 786404E638654216D87303B3 /* MatrixMobileDevice.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		EC99AD4CA3A282B9B41B199F /* MatrixMobileCamera.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC87F9A6FA093221B68283B2 /* MatrixMobileCamera.xcframework */; };
+		FC1661E8C9E9C2A4FB6184A8 /* ZipArchive.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D7FB6DAC1C9F4BC5461BE8 /* ZipArchive.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		922F80632D0277B5005101A2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50C948DC18C4F4C1E37F06F5 /* GCDWebServers.xcframework in Embed Frameworks */,
+				9A27F304856048C9FD0C4C5C /* Matrix_Mobile.xcframework in Embed Frameworks */,
+				4494FD2820E34D1B1EE5C72C /* ZipArchive.xcframework in Embed Frameworks */,
+				6E5DEE1A61A42846D9B53579 /* MatrixMobileNetwork.xcframework in Embed Frameworks */,
+				7EE610E8870989E60EF10384 /* MatrixMobileApp.xcframework in Embed Frameworks */,
+				BF27F9ACBB526A1E44D24832 /* MatrixMobileDevice.xcframework in Embed Frameworks */,
+				05A10F51FDF75F273E2FB711 /* MatrixMobileCamera.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27F25E86E8211998EBB3E1CD /* Matrix_Mobile.xcframework */ = {isa = PBXFileReference; explicitFileType = wrapper.xcframework; lastKnownFileType = wrapper.xcframework; name = Matrix_Mobile.xcframework; path = Matrix_Mobile.xcframework; sourceTree = "<group>"; };
+		786404E638654216D87303B3 /* MatrixMobileDevice.xcframework */ = {isa = PBXFileReference; explicitFileType = wrapper.xcframework; lastKnownFileType = wrapper.xcframework; name = MatrixMobileDevice.xcframework; path = MatrixMobileDevice.xcframework; sourceTree = "<group>"; };
+		9267102E2D27CF0900300017 /* MatrixMobile.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MatrixMobile.bundle; sourceTree = "<group>"; };
+		9A0C3597271FB8C0009756B8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9A1D025F2CB776A00073DA79 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = "ja.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
+		9A1D02602CB776A00073DA79 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		9A1D02612CB776AF0073DA79 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = "ko.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
+		9A1D02622CB776AF0073DA79 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		9A415C8928F686EB00A03CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A415C8A28F686EB00A03CD8 /* Template-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Template-Info.plist"; sourceTree = "<group>"; };
+		9A87CFEC263A82130031B526 /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AAA9C1E29382A5500F47681 /* SamplePlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePlugin.swift; sourceTree = "<group>"; };
+		9AB4020C27A3B64F00620A3E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9ABD6960263C045700CE0393 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9ABD6966263C045700CE0393 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		9ABD6971263C046600CE0393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9ABD6973263C046600CE0393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AD018772CFD46110068B8BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Launch Screen.strings"; sourceTree = "<group>"; };
+		9AD018782CFD46110068B8BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		9AF1076B273A0A3C0009741C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A46AA5B76EEE1AD53C90F7E5 /* GCDWebServers.xcframework */ = {isa = PBXFileReference; explicitFileType = wrapper.xcframework; lastKnownFileType = wrapper.xcframework; name = GCDWebServers.xcframework; path = GCDWebServers.xcframework; sourceTree = "<group>"; };
+		AC87F9A6FA093221B68283B2 /* MatrixMobileCamera.xcframework */ = {isa = PBXFileReference; explicitFileType = wrapper.xcframework; lastKnownFileType = wrapper.xcframework; name = MatrixMobileCamera.xcframework; path = MatrixMobileCamera.xcframework; sourceTree = "<group>"; };
+		BAA326DFAA6090429B809108 /* MatrixMobileApp.xcframework */ = {isa = PBXFileReference; explicitFileType = wrapper.xcframework; lastKnownFileType = wrapper.xcframework; name = MatrixMobileApp.xcframework; path = MatrixMobileApp.xcframework; sourceTree = "<group>"; };
+		D3CA2083EDD01021CD3C9EA7 /* MatrixMobileNetwork.xcframework */ = {isa = PBXFileReference; explicitFileType = wrapper.xcframework; lastKnownFileType = wrapper.xcframework; name = MatrixMobileNetwork.xcframework; path = MatrixMobileNetwork.xcframework; sourceTree = "<group>"; };
+		D3D7FB6DAC1C9F4BC5461BE8 /* ZipArchive.xcframework */ = {isa = PBXFileReference; explicitFileType = wrapper.xcframework; lastKnownFileType = wrapper.xcframework; name = ZipArchive.xcframework; path = ZipArchive.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A87CFE9263A82130031B526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC42030FA4737816397A39C /* GCDWebServers.xcframework in Frameworks */,
+				1E77442401E1265CA5693215 /* Matrix_Mobile.xcframework in Frameworks */,
+				FC1661E8C9E9C2A4FB6184A8 /* ZipArchive.xcframework in Frameworks */,
+				198CE446E43A6C1A7C04C4D8 /* MatrixMobileNetwork.xcframework in Frameworks */,
+				BBEF4D73CCA7F8DC021B2E65 /* MatrixMobileApp.xcframework in Frameworks */,
+				777526427204AFA1B4B8FC33 /* MatrixMobileDevice.xcframework in Frameworks */,
+				EC99AD4CA3A282B9B41B199F /* MatrixMobileCamera.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6686E51329066FC3008B2CC0 /* MatrixMobile */ = {
+			isa = PBXGroup;
+			children = (
+				9267102E2D27CF0900300017 /* MatrixMobile.bundle */,
+				6686E51429066FC3008B2CC0 /* Plugins */,
+				6686E52A29066FC3008B2CC0 /* Lib */,
+			);
+			path = MatrixMobile;
+			sourceTree = "<group>";
+		};
+		6686E51429066FC3008B2CC0 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				926710312D27CFF500300017 /* matrix-mobile-plugin-app */,
+				926710332D27CFF500300017 /* matrix-mobile-plugin-camera */,
+				926710352D27CFF500300017 /* matrix-mobile-plugin-device */,
+				926710372D27CFF500300017 /* matrix-mobile-plugin-network */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		6686E52A29066FC3008B2CC0 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A46AA5B76EEE1AD53C90F7E5 /* GCDWebServers.xcframework */,
+				27F25E86E8211998EBB3E1CD /* Matrix_Mobile.xcframework */,
+				D3D7FB6DAC1C9F4BC5461BE8 /* ZipArchive.xcframework */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		926710312D27CFF500300017 /* matrix-mobile-plugin-app */ = {
+			isa = PBXGroup;
+			children = (
+				BAA326DFAA6090429B809108 /* MatrixMobileApp.xcframework */,
+			);
+			path = "matrix-mobile-plugin-app";
+			sourceTree = "<group>";
+		};
+		926710332D27CFF500300017 /* matrix-mobile-plugin-camera */ = {
+			isa = PBXGroup;
+			children = (
+				AC87F9A6FA093221B68283B2 /* MatrixMobileCamera.xcframework */,
+			);
+			path = "matrix-mobile-plugin-camera";
+			sourceTree = "<group>";
+		};
+		926710352D27CFF500300017 /* matrix-mobile-plugin-device */ = {
+			isa = PBXGroup;
+			children = (
+				786404E638654216D87303B3 /* MatrixMobileDevice.xcframework */,
+			);
+			path = "matrix-mobile-plugin-device";
+			sourceTree = "<group>";
+		};
+		926710372D27CFF500300017 /* matrix-mobile-plugin-network */ = {
+			isa = PBXGroup;
+			children = (
+				D3CA2083EDD01021CD3C9EA7 /* MatrixMobileNetwork.xcframework */,
+			);
+			path = "matrix-mobile-plugin-network";
+			sourceTree = "<group>";
+		};
+		9A87CFE3263A82130031B526 = {
+			isa = PBXGroup;
+			children = (
+				6686E51329066FC3008B2CC0 /* MatrixMobile */,
+				9A87CFEE263A82130031B526 /* Template */,
+				9A87CFED263A82130031B526 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A87CFED263A82130031B526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A87CFEC263A82130031B526 /* Template.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A87CFEE263A82130031B526 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				9AAA9C1D29382A5500F47681 /* Plugins */,
+				9A415C8928F686EB00A03CD8 /* Assets.xcassets */,
+				9A415C8A28F686EB00A03CD8 /* Template-Info.plist */,
+				9ABD6970263C046600CE0393 /* Launch Screen.storyboard */,
+				9ABD6972263C046600CE0393 /* Main.storyboard */,
+				9ABD6966263C045700CE0393 /* LoadingView.xib */,
+				9ABD6960263C045700CE0393 /* AppDelegate.swift */,
+				9AB4020C27A3B64F00620A3E /* SceneDelegate.swift */,
+				9AF1076B273A0A3C0009741C /* LoadingView.swift */,
+				9A0C3597271FB8C0009756B8 /* MainViewController.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		9AAA9C1D29382A5500F47681 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				9AAA9C1E29382A5500F47681 /* SamplePlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A87CFEB263A82130031B526 /* Template */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A87D000263A82150031B526 /* Build configuration list for PBXNativeTarget "Template" */;
+			buildPhases = (
+				9AA2FB242834EE330029A439 /* ShellScript */,
+				9A87CFE8263A82130031B526 /* Sources */,
+				9A87CFE9263A82130031B526 /* Frameworks */,
+				9A87CFEA263A82130031B526 /* Resources */,
+				922F80632D0277B5005101A2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Template;
+			productName = Template;
+			productReference = 9A87CFEC263A82130031B526 /* Template.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A87CFE4263A82130031B526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					9A87CFEB263A82130031B526 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = 9A87CFE7263A82130031B526 /* Build configuration list for PBXProject "Template" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ja,
+				ko,
+				en,
+			);
+			mainGroup = 9A87CFE3263A82130031B526;
+			productRefGroup = 9A87CFED263A82130031B526 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A87CFEB263A82130031B526 /* Template */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A87CFEA263A82130031B526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABD696F263C045700CE0393 /* LoadingView.xib in Resources */,
+				9A415C8B28F686EB00A03CD8 /* Assets.xcassets in Resources */,
+				9ABD6975263C046600CE0393 /* Main.storyboard in Resources */,
+				9267102F2D27CF0900300017 /* MatrixMobile.bundle in Resources */,
+				9ABD6974263C046600CE0393 /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AA2FB242834EE330029A439 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/libexec/PlistBuddy -c \"Set target $TARGET_NAME\" ${PROJECT_DIR}/MatrixMobile/MatrixMobile.bundle/MatrixMobileConfig.plist\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A87CFE8263A82130031B526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF1076C273A0A3C0009741C /* LoadingView.swift in Sources */,
+				9AAA9C1F29382A5500F47681 /* SamplePlugin.swift in Sources */,
+				9ABD696C263C045700CE0393 /* AppDelegate.swift in Sources */,
+				9A0C3598271FB8C0009756B8 /* MainViewController.swift in Sources */,
+				9AB4020D27A3B64F00620A3E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9ABD6970263C046600CE0393 /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ABD6971263C046600CE0393 /* Base */,
+				9A1D025F2CB776A00073DA79 /* ja */,
+				9A1D02612CB776AF0073DA79 /* ko */,
+				9AD018772CFD46110068B8BA /* en */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
+		9ABD6972263C046600CE0393 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ABD6973263C046600CE0393 /* Base */,
+				9A1D02602CB776A00073DA79 /* ja */,
+				9A1D02622CB776AF0073DA79 /* ko */,
+				9AD018782CFD46110068B8BA /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A87CFFE263A82150031B526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A87CFFF263A82150031B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A87D001263A82150031B526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KVC5GC7679;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+					"$(PROJECT_DIR)/MatrixMobile/Plugins/matrix-mobile-plugin-network",
+					"$(PROJECT_DIR)/MatrixMobile/Plugins/matrix-mobile-plugin-camera",
+					"$(PROJECT_DIR)/MatrixMobile/Lib",
+					"$(PROJECT_DIR)/MatrixMobile/Plugins/matrix-mobile-plugin-device",
+					"$(PROJECT_DIR)/MatrixMobile/Plugins/matrix-mobile-plugin-app",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Template/Plugin/TestPlugin/TestPlugin-Swift.h";
+				INFOPLIST_FILE = "$(SRCROOT)/Template/Template-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Template;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 0.0.3;
+				ON_DEMAND_RESOURCES_PREFETCH_ORDER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.soorintest;
+				PRODUCT_NAME = "${TARGET_NAME:c99extidentifier}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "provisiong all";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/Template/Plugin/TestPlugin\"";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		9A87D002263A82150031B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = YXHXABBUG5;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = YXHXABBUG5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+					"$(PROJECT_DIR)/MatrixMobile/Plugins/matrix-mobile-plugin-network",
+					"$(PROJECT_DIR)/MatrixMobile/Plugins/matrix-mobile-plugin-camera",
+					"$(PROJECT_DIR)/MatrixMobile/Lib",
+					"$(PROJECT_DIR)/MatrixMobile/Plugins/matrix-mobile-plugin-device",
+					"$(PROJECT_DIR)/MatrixMobile/Plugins/matrix-mobile-plugin-app",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Template/Plugin/TestPlugin/TestPlugin-Swift.h";
+				INFOPLIST_FILE = "$(SRCROOT)/Template/Template-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Template;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 0.0.3;
+				ON_DEMAND_RESOURCES_PREFETCH_ORDER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.soorintest;
+				PRODUCT_NAME = "${TARGET_NAME:c99extidentifier}";
+				PROVISIONING_PROFILE_SPECIFIER = SooRinTest;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = SooRinTest;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A87CFE7263A82130031B526 /* Build configuration list for PBXProject "Template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A87CFFE263A82150031B526 /* Debug */,
+				9A87CFFF263A82150031B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A87D000263A82150031B526 /* Build configuration list for PBXNativeTarget "Template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A87D001263A82150031B526 /* Debug */,
+				9A87D002263A82150031B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A87CFE4263A82130031B526 /* Project object */;
+}
