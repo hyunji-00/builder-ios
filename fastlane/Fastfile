@@ -1,43 +1,23 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
 default_platform(:ios)
 
 platform :ios do
-    desc "Description of what the lane does"
-
-    lane :beta do
-        api_key = app_store_connect_api_key(
-            key_id: ENV["ASC_KEY_ID"],
-            issuer_id: ENV["ASC_ISSUER_ID"],
-            key_filepath: ENV["ASC_KEY_FILEPATH"],
-            in_house: false
-        )
-        upload_to_testflight(
-            api_key: api_key,
-            build_number: ENV["BUILD_APP_BUILD_NUMBER"],
-            ipa: ENV["BUILD_APP_FILE_PATH"],
-            skip_submission: ENV["SKIP_SUBMISSION"],
-            skip_waiting_for_build_processing: ENV["SKIP_WAITING_FOR_BUILD_PROCESSING"],
-            distribute_only: ENV["DISTRIBUTE_ONLY"],
-            uses_non_exempt_encryption: ENV["USES_NON_EXEMPT_ENCRYPTION"],
-            distribute_external: ENV["DISTRIBUTE_EXTERNAL"],
-            expire_previous_builds: ENV["EXPIRE_PREVIOUS_BUILDS"],
-            reject_build_waiting_for_review: ENV["REJECT_BUILD_WAITING_FOR_REVIEW"],
-            submit_beta_review: ENV["SUBMIT_BETA_REVIEW"]
-        )
-    end
-
-    lane :deploy do
-        api_key = app_store_connect_api_key(
-            key_id: ENV["ASC_KEY_ID"],
-            issuer_id: ENV["ASC_ISSUER_ID"],
-            key_filepath: ENV["ASC_KEY_FILEPATH"],
-            in_house: false
-        )
-        upload_to_app_store(
-            api_key: api_key,
-            ipa: ENV["BUILD_APP_FILE_PATH"],
-            skip_metadata: true,
-            skip_screenshots: true,
-            force: true
-        )
-    end
+  desc "Description of what the lane does"
+  lane :custom_lane do
+    # add actions here: https://docs.fastlane.tools/actions
+  end
 end
